@@ -1,0 +1,66 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navl1{
+    color: black;
+}
+
+.navl{
+    transition: 0.3s;
+    position: relative;
+}
+ .navl::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 3px;
+bottom: 0;
+left: 0;
+background-color:#ff184e ;
+background: linear-gradient(to right, #ff184e 50%,white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: 0.3s;
+
+} 
+    .navl:hover::after,
+   .navl.active::after {
+    background-position: left bottom;
+   
+}   
+.navi{
+    position: relative;
+    transition: 0.3s;
+}
+.nav-link i{
+    transition: 0.3s;
+}
+.navi:hover .nav-link i{
+font-size: 20px;
+}
+.navi:hover::after{
+    content: attr(data-content);
+    position: absolute;
+    width: fit-content;
+    height: 25px;
+    padding: 0 5px 0 5px;
+    margin: 0 5px 0 5px ;
+    background-color: black;
+    color: white;
+    left: 0px;
+    font-size: 14px;
+    border-radius: 6px;
+    text-align: center ;
+    transition: 0.3s;
+}
+
+ /* .navl:hover .navl::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff184e;
+}   */

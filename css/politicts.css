@@ -1,0 +1,49 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.font{
+    font-size: 13px;
+}
+.photo2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.char{
+    color: #ff184e;
+}
+.photo1{
+    position: relative;
+}
+.photo1::after{
+    content: "REGOIN";
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    font-size: 12px;
+    transform: skewX(-30deg);
+    padding: 2px 5px;
+    border-radius: 4px;
+    left: -5px;
+    bottom: 10px;
+    background-color: #ff184e;
+    color: white;
+    z-index: 2;
+}
+.photo1::before{
+    content: attr(data-parent);
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    font-size: 12px;
+    transform: skewX(-30deg);
+    padding: 2px 5px;
+    border-radius: 4px;
+    left: 70px;
+    bottom: 10px;
+    background-color: #ff184e;
+    color: white;
+    z-index: 2;
+}
