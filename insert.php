@@ -10,6 +10,7 @@ $css_file="admin.css";
       $db="news";
       $conn = mysqli_connect($host,$user,$pass,$db);
 
+    //  insert
     if(isset($_POST['btn_ins'])){
           $title=$_POST['title'];
           $disc=$_POST['disc'];
